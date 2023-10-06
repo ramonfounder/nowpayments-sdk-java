@@ -11,14 +11,14 @@ import java.util.Map;
 import java.util.Objects;
 
 @Component
-public class Nowpayments {
+public class NowPayments {
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
     private final static String BASE_URL = "https://api.nowpayments.io/v1";
     private final OkHttpClient httpClient;
     private final ObjectMapper objectMapper;
 
     @Autowired
-    public Nowpayments(OkHttpClient httpClient, ObjectMapper objectMapper) {
+    public NowPayments(OkHttpClient httpClient, ObjectMapper objectMapper) {
         this.httpClient = httpClient;
         this.objectMapper = objectMapper;
     }

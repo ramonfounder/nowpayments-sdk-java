@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConditionalOnMissingBean(type = "org.springframework.data.mongodb.MongoDbFactory")
-public class NowpaymentsConfig {
+public class NowPaymentsConfig {
 
     /**
      * Conditional
